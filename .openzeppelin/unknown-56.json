@@ -1,0 +1,3718 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xF4a9412831Db85A902c2f08BEC36e4B43648440b",
+      "txHash": "0x147c1bf5d07f0d851ff765dc76296e516474d14df0a267df24fa52ca82623321",
+      "kind": "uups"
+    },
+    {
+      "address": "0x795AAF2a5533bf02f5ea92d9008535Bc9917F3C6",
+      "txHash": "0x4cb971a0f6a25b82646a52332ee858a4161f2efdd3b1580ba42e53b5d3ed0d9a",
+      "kind": "uups"
+    },
+    {
+      "address": "0xc3C090E98a6FfC9016c5B2cC551cf0C11f3933Bd",
+      "txHash": "0x75e08f3ccddc0629c64aac00eb89ec92bfc3263ebe5c76aa1ed46fd6524c46ea",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "39eac6b95fe531e5553b07452583870085a94a572f740b0e33deb49ad3b8a383": {
+      "address": "0x450370e8f526F17e170d75b615581BBAf7818eB7",
+      "txHash": "0x7fa1999c62cc85c3b6963c4bfa02309d692f0c05b67cc8f332b8556bd288ec23",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNeko.sol:47"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNeko.sol:49"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNeko.sol:50"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNeko.sol:51"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNeko.sol:53"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNeko.sol:54"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNeko.sol:55"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNeko.sol:57"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNeko.sol:58"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNeko.sol:60"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNeko.sol:61"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNeko.sol:62"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNeko.sol:63"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNeko.sol:65"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)2231_storage": {
+            "label": "struct RetroNeko.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "1298fe851afb63a53a8d13756d3baa9a7514b0c03fbdb599adbe0b9e5c071944": {
+      "address": "0xF41385E1199A3de40C0699A17407466052DAAAF8",
+      "txHash": "0xf5304e82dbe9d0314a7e24d07e0a53b5aa35eb15fda3a8c202931cb891e7526f",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV2.sol:49"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV2.sol:51"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV2.sol:52"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV2.sol:53"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV2.sol:55"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV2.sol:56"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV2.sol:57"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV2.sol:59"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV2.sol:60"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV2.sol:62"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV2.sol:63"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV2.sol:64"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV2.sol:65"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV2.sol:67"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_tradingEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV2.sol:75"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_takeFeesEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV2.sol:76"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV2.sol:77"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_deadBlocks",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV2.sol:79"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_launchedAt",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV2.sol:80"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV2.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)2231_storage": {
+            "label": "struct RetroNeko.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "dd6d61a8343840a9cac41302c6ea14eb516fcb266e895788c304103890ad2a81": {
+      "address": "0x889c30e616bff5C4B81009734e4C9e849F606689",
+      "txHash": "0xde2e94a800e2a0b88c64d47946fe0506cf5105930e101ec9be2f5ddcd01e0bad",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV3.sol:49"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV3.sol:51"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV3.sol:52"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV3.sol:53"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV3.sol:55"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV3.sol:56"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV3.sol:57"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV3.sol:59"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV3.sol:60"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV3.sol:62"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV3.sol:63"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV3.sol:64"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV3.sol:65"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV3.sol:67"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_tradingEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV3.sol:75"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_takeFeesEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV3.sol:76"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV3.sol:77"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_deadBlocks",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV3.sol:79"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_launchedAt",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV3.sol:80"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV3.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)2231_storage": {
+            "label": "struct RetroNeko.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "63e1754740025f479db6433e61b1b979ec90d2aab5e146740f586560fe4d4d04": {
+      "address": "0xb9136cF5B4EE018080Dff46199591863A5E6227D",
+      "txHash": "0x4ccba999597598d71fb9c2e20796952eb73ebc64c6f4131ca06c0d1ccd5bd698",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV4.sol:49"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV4.sol:51"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV4.sol:52"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV4.sol:53"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV4.sol:55"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV4.sol:56"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV4.sol:57"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV4.sol:59"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV4.sol:60"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV4.sol:62"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV4.sol:63"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV4.sol:64"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV4.sol:65"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV4.sol:67"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_tradingEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV4.sol:75"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_takeFeesEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV4.sol:76"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV4.sol:77"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_deadBlocks",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV4.sol:79"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_launchedAt",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV4.sol:80"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV4.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)2231_storage": {
+            "label": "struct RetroNeko.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "b6497ce6c65b65ca1aaa70aeaf0c6e58a76d795ec56cf50fa321655cc1fea850": {
+      "address": "0xEF779d881550CAA0209d542afe35BfDB1f5B4b0C",
+      "txHash": "0x4315f7f8ae4b248845fadbd6bd0ef66b4d090414532ef05ee5f95f17f1a77052",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV5.sol:49"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV5.sol:51"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV5.sol:52"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV5.sol:53"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV5.sol:55"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)15997_storage",
+            "src": "contracts/tokens/RetroNekoV5.sol:56"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)15997_storage",
+            "src": "contracts/tokens/RetroNekoV5.sol:57"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV5.sol:59"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV5.sol:60"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV5.sol:62"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV5.sol:63"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV5.sol:64"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV5.sol:65"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV5.sol:67"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_tradingEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV5.sol:75"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_takeFeesEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV5.sol:76"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV5.sol:77"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_deadBlocks",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV5.sol:79"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_launchedAt",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV5.sol:80"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV5.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)15997_storage": {
+            "label": "struct RetroNeko.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "913a78cab353f2521179fd77d802645a48ec96f807c8a5cd10ec14ce5c04ea56": {
+      "address": "0xEb6F0168689c91bAB6f613017a075D15cBF0A2d4",
+      "txHash": "0x0c92626d7b7da539022f3b5024b1f0968bc37b928c5ec02e3c637b968e722d0e",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV6.sol:49"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV6.sol:51"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV6.sol:52"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV6.sol:53"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV6.sol:55"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV6.sol:56"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV6.sol:57"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV6.sol:59"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV6.sol:60"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV6.sol:62"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV6.sol:63"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV6.sol:64"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV6.sol:65"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV6.sol:67"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_tradingEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV6.sol:75"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_takeFeesEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV6.sol:76"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV6.sol:77"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_deadBlocks",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV6.sol:79"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_launchedAt",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV6.sol:80"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV6.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)2231_storage": {
+            "label": "struct RetroNeko.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "1c5aac94fd181ade1ce7a4945c82c7c92a1628feeb5cd9f7fc1399f14e216153": {
+      "address": "0x8bA1c882CA9b6Bea7a39b96c98D9b60f26FfE8b7",
+      "txHash": "0xac8e1a7574746d44109e9dc927a435a03e7af8e35786850afe5348c701462e3b",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV7.sol:49"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV7.sol:51"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV7.sol:52"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV7.sol:53"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV7.sol:55"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV7.sol:56"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV7.sol:57"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV7.sol:59"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV7.sol:60"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV7.sol:62"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV7.sol:63"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV7.sol:64"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV7.sol:65"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV7.sol:67"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_tradingEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV7.sol:75"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_takeFeesEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV7.sol:76"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV7.sol:77"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_deadBlocks",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV7.sol:79"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_launchedAt",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV7.sol:80"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV7.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)2231_storage": {
+            "label": "struct RetroNeko.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "4dc838599a4162d15b1fa73b439640b33dbd8ef8af611b2e0607d69c4ac5bd01": {
+      "address": "0x8b98264b431C46a822e18b28d11dEBdf0643D84d",
+      "txHash": "0x6ed4caf28a677575504ef4f83ef26bd3dc89b56149460a3fa0a3516412e3c7cc",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV8.sol:49"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV8.sol:51"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV8.sol:52"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV8.sol:53"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV8.sol:55"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV8.sol:56"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV8.sol:57"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV8.sol:59"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV8.sol:60"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV8.sol:62"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV8.sol:63"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV8.sol:64"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV8.sol:65"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV8.sol:67"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_tradingEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV8.sol:75"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_takeFeesEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV8.sol:76"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV8.sol:77"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_deadBlocks",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV8.sol:79"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_launchedAt",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV8.sol:80"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV8.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)2231_storage": {
+            "label": "struct RetroNeko.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "69e4b7774a803f3b1628bcee100c988056550c3ca626dec561ead1084a05c60e": {
+      "address": "0x921044108b7207828C5c6646946Ce7504C40caF8",
+      "txHash": "0x35c17a0baa262b134afec32e0c3193397e7f6809b50a993805feb5d3f1353456",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV9.sol:49"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV9.sol:51"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV9.sol:52"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV9.sol:53"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV9.sol:55"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)27882_storage",
+            "src": "contracts/tokens/RetroNekoV9.sol:56"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)27882_storage",
+            "src": "contracts/tokens/RetroNekoV9.sol:57"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV9.sol:59"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV9.sol:60"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV9.sol:62"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV9.sol:63"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV9.sol:64"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV9.sol:65"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV9.sol:67"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_tradingEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV9.sol:75"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_takeFeesEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV9.sol:76"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_swapEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV9.sol:77"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_deadBlocks",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV9.sol:79"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_launchedAt",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV9.sol:80"
+          },
+          {
+            "contract": "RetroNeko",
+            "label": "_isExcludedFromSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV9.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)27882_storage": {
+            "label": "struct RetroNeko.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "5785e4efaa45316e5267878560275669a903385fddbef2c3fc76c6bc081e9ec2": {
+      "address": "0xe8AbeF33E0b8f30Be0A202eCC344589D17C63e41",
+      "txHash": "0x745ab711583b23816545c5d53e7378241a2c974581a2a7da919d694328099fe7",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV10.sol:49"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV10.sol:51"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV10.sol:52"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV10.sol:53"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV10.sol:55"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)9161_storage",
+            "src": "contracts/tokens/RetroNekoV10.sol:56"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)9161_storage",
+            "src": "contracts/tokens/RetroNekoV10.sol:57"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV10.sol:59"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV10.sol:60"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV10.sol:62"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV10.sol:63"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV10.sol:64"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV10.sol:65"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV10.sol:67"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_tradingEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV10.sol:75"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_takeFeesEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV10.sol:76"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_swapEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV10.sol:77"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_deadBlocks",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV10.sol:79"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_launchedAt",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV10.sol:80"
+          },
+          {
+            "contract": "RetroNekoV10",
+            "label": "_isExcludedFromSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV10.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)9161_storage": {
+            "label": "struct RetroNekoV10.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "6537d8ab821b517c31df63fb45a3478f315853318e8c4ecb2bcba97e0b9ce08e": {
+      "address": "0x739E99D7b73f1EEF5c0B7c936Cdd7D332BE525E3",
+      "txHash": "0xac074769ebbb44428d8645ff885887c97fc252b71cd62d1d7be3b561fb5490a8",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV11.sol:49"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV11.sol:51"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV11.sol:52"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV11.sol:53"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV11.sol:55"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)11525_storage",
+            "src": "contracts/tokens/RetroNekoV11.sol:56"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)11525_storage",
+            "src": "contracts/tokens/RetroNekoV11.sol:57"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV11.sol:59"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV11.sol:60"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV11.sol:62"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV11.sol:63"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV11.sol:64"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV11.sol:65"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV11.sol:67"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_tradingEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV11.sol:75"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_takeFeesEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV11.sol:76"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_swapEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV11.sol:77"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_deadBlocks",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV11.sol:79"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_launchedAt",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV11.sol:80"
+          },
+          {
+            "contract": "RetroNekoV11",
+            "label": "_isExcludedFromSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV11.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)11525_storage": {
+            "label": "struct RetroNekoV11.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "91bc0fc349d1ec7ffdff6beda1dca99b5ebb56215296c245b831c4645cbd5f3d": {
+      "address": "0x1b26e795d7971caCDA256459ED982FA1b6fADB06",
+      "txHash": "0xcc0d47ca17297ac7d99eb641ba0a9582eb100f06a4e66e07aba6a7bef91a8e1d",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV12.sol:49"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV12.sol:51"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV12.sol:52"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV12.sol:53"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV12.sol:55"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV12.sol:56"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV12.sol:57"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV12.sol:59"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV12.sol:60"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV12.sol:62"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV12.sol:63"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV12.sol:64"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV12.sol:65"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV12.sol:67"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_tradingEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV12.sol:75"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_takeFeesEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV12.sol:76"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_swapEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV12.sol:77"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_deadBlocks",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV12.sol:79"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_launchedAt",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV12.sol:80"
+          },
+          {
+            "contract": "RetroNekoV12",
+            "label": "_isExcludedFromSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV12.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)2231_storage": {
+            "label": "struct RetroNekoV12.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "9fe3ec6fd3aca31a3d455da04190fe489df767f96c9914e3bb8c2f8168c5199c": {
+      "address": "0xa8DABE0dA1720Cb2d9C1bfFd8cE1707fe6029d4F",
+      "txHash": "0x5946a3431dc607029c47f8f534fe5387f2ee1289d76228853478a6c8a293f826",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:37"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:39"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:41"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:43"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:362"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_router",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV13.sol:49"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_isAutomatedMarketMakerPairs",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV13.sol:51"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_isExcludedFromFees",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV13.sol:52"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_isBlacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV13.sol:53"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_isBuying",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV13.sol:55"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_buyFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV13.sol:56"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_sellFees",
+            "type": "t_struct(Fees)2231_storage",
+            "src": "contracts/tokens/RetroNekoV13.sol:57"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_swapThreshold",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV13.sol:59"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_gasForProcessing",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV13.sol:60"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_teamWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV13.sol:62"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_marketingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV13.sol:63"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_stakingWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV13.sol:64"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_warWallet",
+            "type": "t_address",
+            "src": "contracts/tokens/RetroNekoV13.sol:65"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_inSwap",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV13.sol:67"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_tradingEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV13.sol:75"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_takeFeesEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV13.sol:76"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_swapEnabled",
+            "type": "t_bool",
+            "src": "contracts/tokens/RetroNekoV13.sol:77"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_deadBlocks",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV13.sol:79"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_launchedAt",
+            "type": "t_uint256",
+            "src": "contracts/tokens/RetroNekoV13.sol:80"
+          },
+          {
+            "contract": "RetroNekoV13",
+            "label": "_isExcludedFromSwap",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "contracts/tokens/RetroNekoV13.sol:82"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Fees)2231_storage": {
+            "label": "struct RetroNekoV13.Fees",
+            "members": [
+              {
+                "label": "liquidityFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "teamFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "providerFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "marketingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "stakingFeesPerTenThousand",
+                "type": "t_uint256"
+              },
+              {
+                "label": "warFeesPerTenThousand",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          }
+        }
+      }
+    },
+    "9cc3e709443c1fdd0858964fb1760c694fe5307a0c39dc57a3a77c68bdfc89dd": {
+      "address": "0x26242a374ed9cA98BD8312FC98ECD73e6067e861",
+      "txHash": "0x6abb90a0d33ee6392649b50014df46468cc7b5e2ab6ad447c23d4b9467c9409c",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "RewardsCalculator",
+            "label": "_silverDailyRewardsRatePerTenThousand",
+            "type": "t_uint256",
+            "src": "contracts/staking/RewardsCalculator.sol:11"
+          },
+          {
+            "contract": "RewardsCalculator",
+            "label": "_goldDailyRewardsRatePerTenThousand",
+            "type": "t_uint256",
+            "src": "contracts/staking/RewardsCalculator.sol:12"
+          },
+          {
+            "contract": "RewardsCalculator",
+            "label": "_diamondDailyRewardsRatePerTenThousand",
+            "type": "t_uint256",
+            "src": "contracts/staking/RewardsCalculator.sol:13"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "dbe52e69608a247a48838d2a4d5ad5e51ed4396fa0c82f2079c8caf56209fea0": {
+      "address": "0x77D2d88A1e51ac12F78acE85ba9AE5d1F67a302C",
+      "txHash": "0x45165a5b7a66fc39f8a9f08861e082b4b048e6f69528fc1e51a76b3549b1ca9a",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "Staking",
+            "label": "_token",
+            "type": "t_contract(ERC20)3217",
+            "src": "contracts/staking/Staking.sol:35"
+          },
+          {
+            "contract": "Staking",
+            "label": "_rewardsCalculator",
+            "type": "t_contract(IRewardsCalculator)7092",
+            "src": "contracts/staking/Staking.sol:36"
+          },
+          {
+            "contract": "Staking",
+            "label": "_packAmount",
+            "type": "t_uint256",
+            "src": "contracts/staking/Staking.sol:38"
+          },
+          {
+            "contract": "Staking",
+            "label": "_totalStakedAmount",
+            "type": "t_uint256",
+            "src": "contracts/staking/Staking.sol:39"
+          },
+          {
+            "contract": "Staking",
+            "label": "_totalClaimedAmount",
+            "type": "t_uint256",
+            "src": "contracts/staking/Staking.sol:40"
+          },
+          {
+            "contract": "Staking",
+            "label": "_silverLockPeriod",
+            "type": "t_uint256",
+            "src": "contracts/staking/Staking.sol:42"
+          },
+          {
+            "contract": "Staking",
+            "label": "_goldLockPeriod",
+            "type": "t_uint256",
+            "src": "contracts/staking/Staking.sol:43"
+          },
+          {
+            "contract": "Staking",
+            "label": "_diamondLockPeriod",
+            "type": "t_uint256",
+            "src": "contracts/staking/Staking.sol:44"
+          },
+          {
+            "contract": "Staking",
+            "label": "_stakeholders",
+            "type": "t_array(t_struct(Stakeholder)5992_storage)dyn_storage",
+            "src": "contracts/staking/Staking.sol:46"
+          },
+          {
+            "contract": "Staking",
+            "label": "_stakeholderIndexes",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/staking/Staking.sol:47"
+          }
+        ],
+        "types": {
+          "t_contract(ERC20)3217": {
+            "label": "contract ERC20"
+          },
+          "t_contract(IRewardsCalculator)7092": {
+            "label": "contract IRewardsCalculator"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_struct(Stakeholder)5992_storage)dyn_storage": {
+            "label": "struct Staking.Stakeholder[]"
+          },
+          "t_struct(Stakeholder)5992_storage": {
+            "label": "struct Staking.Stakeholder",
+            "members": [
+              {
+                "label": "holder",
+                "type": "t_address"
+              },
+              {
+                "label": "stakes",
+                "type": "t_array(t_struct(Stake)5984_storage)9_storage"
+              }
+            ]
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_struct(Stake)5984_storage)9_storage": {
+            "label": "struct Staking.Stake[9]"
+          },
+          "t_struct(Stake)5984_storage": {
+            "label": "struct Staking.Stake",
+            "members": [
+              {
+                "label": "holder",
+                "type": "t_address"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "since",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimableAmount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}

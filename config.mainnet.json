@@ -1,0 +1,6 @@
+{
+    "UniswapV2Router02DeployedAddress": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+    "RetroNekoProxyDeployedAddress": "0xF4a9412831Db85A902c2f08BEC36e4B43648440b",
+    "RewardsCalculatorProxyDeployedAddress": "0x795AAF2a5533bf02f5ea92d9008535Bc9917F3C6",
+    "StakingProxyDeployedAddress": "0xc3C090E98a6FfC9016c5B2cC551cf0C11f3933Bd"
+}

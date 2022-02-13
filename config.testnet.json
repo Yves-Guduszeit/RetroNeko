@@ -1,0 +1,13 @@
+{
+    "UniswapV2Router02DeployedAddress": "0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3",
+    "RetroNekoProxyDeployedAddress": "0xb85A565F6252c32c33DC02bb73A4192FF3C0085F",
+    "RetroNekoDeployedAddress": "0x9684D1160dCb6d47DCCDEa0cD053ba2B83d0C764",
+    "RewardsCalculatorProxyDeployedAddress": "0xb10D5b558D5683C8d584A5075b21f8F2C9976A56",
+    "RewardsCalculatorDeployedAddress": "0x9C9Cab5Dc2EcdC6286efE0816720D7a2dfACB3c6",
+    "StakingProxyDeployedAddress": "0x8994b418bde35304972019F84a2d00a36F7412C7",
+    "StakingDeployedAddress": "0xe7f04d30Ca761CDa2129fE2bF6e3f9e0E739AF84",
+    "LiquidityLockerProxyDeployedAddress": "0xFf6f592F5582b65269d6a0fd44FCe4cE73Cda840",
+    "LiquidityLockerDeployedAddress": "0x7F53Be4F7CF73ADf1816FA93D9fC453e614639C5",
+    "MultisenderProxyDeployedAddress": "0x45cD749A9BD4BBAFD33E1F5216512F2fD973Cc4f",
+    "MultisenderDeployedAddress": "0x019F66E2aE907C75316675F9913d12aDbE43886e"
+}
